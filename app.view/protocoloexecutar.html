@@ -1,0 +1,28 @@
+<div id="container">
+<div id="div_form">
+	<form action="?class=ExecutarProtocoloForm&method=Executar" method="post" class="formulario">
+		<fieldset>
+			<legend>Executar Protocolo</legend> 
+			
+			<span class="msg">#MSG</span> <br />
+			
+			<div id="div_image">
+				<img src="app.images/approve_notes.png" alt="Executar Protocolo" title="Executar Protocolo" />
+			</div>
+				<div id="div_fields" >
+				<input type="hidden" name="pro_id" value="#PRO_ID">
+				<label for="protocolo_numero">Nº do Protocolo</label> <br />
+				<input type="text" name="protocolo_numero" id="protocolo_numero" readonly="readonly" value="#PRO_NUMERO_ANO" class="sizefiled_120" /> <br />
+				
+				<label for="protocolo_nome">Nome</label> <br />
+				<input type="text" name="protocolo_nome" id="protocolo_nome"  readonly="readonly" value="#PRO_NOME" class="#protocolo_nome_requerido sizefiled_300" /> <br />
+				
+				<label for="protocolo_pedido">Pedido/Reclamação/Sugestão </label> <br />
+				<textarea name="protocolo_pedido" id="protocolo_pedido" readonly="readonly" class="#protocolo_pedido_requerido sizefiled_300"  >#PRO_PEDIDO_RECLAMACAO_SUGESTAO</textarea><br />
+	
+				<input name="btnExecutar" type="submit" value="Executar Protocolo" class="sizefiled_320"/> <br />
+			</div>
+		</fieldset>
+	</form>
+</div>
+</div>

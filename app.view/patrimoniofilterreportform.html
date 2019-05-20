@@ -1,0 +1,49 @@
+<div id="container">
+<div id="div_form">
+	<form action="?class=PatrimonioFilterReportForm&method=onGerar" method="post" class="formulario">
+		<fieldset>
+			<legend>Filtro do Relatório - Patrimônios</legend> 
+			
+			<span class="msg">#MSG</span> <br />
+			
+			<div id="div_image">
+				<img src="app.images/filter.png" alt="Filtro do Relatório" title="Filtro do Relatório" />
+			</div>
+				<div id="div_fields" >
+				<label for="patrimonio_numero">Por ordem de </label> <br /><br />
+				<input name="order_by" value="PAT_TOMBO" type="radio"  title="#CHECKED_TOMBO" />
+					<label>Número</label>
+				<input name="order_by" value="PAT_DESCRICAO" type="radio" title="#CHECKED_DESCRICAO" />
+					<label>Descrição</label><br /><br />
+	
+				<label for="tipo_patrimonio">Tipo</label> <br />
+				<select name="tipo_patrimonio" id="tipo_patrimonio" >
+					<option value="0">[Todos]</option>
+					<option>#OPTIONS_TIPO</option>
+				</select> <br /> 
+				
+				<label for="local">Local</label> <br />
+				<select name="local" id="local" >
+					<option value="0">[Todos]</option>
+					<option>#OPTIONS_LOCAL</option>
+				</select> <br /> 
+				
+				<label for="situacao">Situação</label> <br />
+				<select name="situacao" id="situacao" >
+					<option value="0">[Todas]</option>
+					<option>#OPTIONS_SITUACAO</option>
+				</select> <br /> 
+
+				<label for="data1">Período de Inserção</label> <br />
+				<input type="text" name="data1" id="data1" value="#DATA1" class="sizefiled_80 mask_99/99/9999_mask" readonly="readonly"/> a 
+				<input type="text" name="data2" id="data2" value="#DATA2" class="sizefiled_80 mask_99/99/9999_mask" readonly="readonly"/>
+				<br />
+				
+				<input name="btnGerarPdf" type="submit" value="Gerar PDF" class="sizefiled_100" />
+				<input name="btnGerarExcel" type="submit" value="Gerar Excel" class="sizefiled_100" /> 
+				<br />
+			</div>
+		</fieldset>
+	</form>
+</div>
+</div>

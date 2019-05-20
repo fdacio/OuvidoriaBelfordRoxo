@@ -1,0 +1,39 @@
+<div id="container">
+<div id="div_form">
+	<form action="?class=ProtocoloFilterReportForm&method=onGerar" method="post" class="formulario">
+		<fieldset>
+			<legend>Filtro do Relatório - Protocolos</legend> 
+			
+			
+			
+			<div id="div_image">
+				<img src="app.images/filter.png" alt="Filtro do Relatório" title="Filtro do Relatório" />
+			</div>
+				<div id="div_fields" >
+				<span class="msg">#MSG</span> <br />
+				<label for="order_by">Por ordem de </label> <br /><br />
+				<input name="order_by" value="PRO_DATA" type="radio"  title="#CHECKED_PRO_DATA" />
+					<label>Data de Abertura</label>
+				<input name="order_by" value="PRO_NUMERO" type="radio" title="#CHECKED_PRO_NUMERO" />
+					<label>Protocolo</label><br /><br />
+	
+				<label for="data_abertura1">Período de Abertura</label> <br />
+				<input type="text" name="pro_data1" id="pro_data1" value="#PRO_DATA1" class="sizefiled_80 mask_99/99/9999_mask" /> a 
+				<input type="text" name="pro_data2" id="pro_data2" value="#PRO_DATA2" class="sizefiled_80 mask_99/99/9999_mask" />
+				<br />
+
+				<label for="status">Status</label> <br />
+				<select name="status" id="status" >
+					<option value="0">[Todos]</option>
+					<option>#OPTIONS_STATUS</option>
+				</select> <br /> 
+				
+
+				<input name="btnGerarPdf" type="submit" value="Gerar PDF" class="sizefiled_100" />
+				<input name="btnGerarExcel" type="submit" value="Gerar Excel" class="sizefiled_100" /> 
+				<br />
+			</div>
+		</fieldset>
+	</form>
+</div>
+</div>

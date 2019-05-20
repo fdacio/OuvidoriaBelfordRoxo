@@ -1,0 +1,723 @@
+@charset "utf-8";
+/* CSS Document */
+*{  
+	margin: 0;
+    padding: 0;
+}
+
+body {
+	margin: 10px 50px 10px 50px;
+	font-family: Arial, Geneva, sans-serif;
+	font-size: 14px;
+}
+
+a img {
+	border:none;
+}
+
+#header {
+	display: table;
+	width: 100%;
+	height: auto;
+	border-bottom: 2px solid black;
+}
+
+#header #logo {
+	float: left;
+}
+
+#header #logo_right {
+	float: right;
+}
+
+#header #title {
+	width:600px;
+	margin: 40px auto;
+	text-align: center;
+	font-size: 24px;
+}
+#header #subtitle {
+	width:600px;
+	margin: auto;
+	text-align: center;
+	font-size: 24px;
+}
+
+
+#content {
+	display: flex;
+	margin-top: 20px;
+	min-height: 470px;
+	clear: both;
+}
+
+#container {
+	flex-grow: 1;
+	width: 100%;
+	border: 1px solid #CCC;
+	border-radius:5px;
+	padding: 10px;	
+}
+
+#footer {
+	border-top: solid 1px black;
+	font-style: italic;
+	position: relative;
+	margin-top: 10px;
+}
+
+
+/*MENU LOGIN*/
+div#div_menu_login{
+	float: right;	
+}
+
+ul#menu_login{
+	padding:0px;
+	margin:0px;
+	list-style-type: none;
+	font-size: 14px;
+}
+
+ul#menu_login li { 
+	display: inline-block;
+}
+
+ul#menu_login a {
+	display: block;:
+	width: auto;
+	padding: 4px;
+	color: black;
+    text-decoration: none;
+}
+
+ul#menu_login a:hover {
+	background-color: #003eff;
+    color: white;    
+}
+
+ul#menu_login li  ul{
+	position: absolute;
+	display:none;
+	
+}
+
+ul#menu_login > li:nth-child(2){
+	font-weight: bold;
+	width: 180px;
+}
+
+ul#menu_login  li img{
+	float: right;
+}
+
+
+ul#menu_login li:hover ul, ul#menu_login li.over ul{
+	display:block;
+}
+
+ul#menu_login li ul li{
+	font-weight: normal;
+	display: block;
+	text-align: right;
+	width: 180px;
+}
+
+/**
+ CSS PARA MENU DOS MÚDULOS
+*/
+div#div_menu_modulo{
+	flex-grow: 0;
+	float:left;
+	margin-right: 4px;
+}
+
+ul#menu_modulo {
+	border: 2px solid #CCC;
+	width: 150px;
+	padding: 0px;
+	margin:0px;
+	list-style-type: none;	
+	font-size: 14px;
+}
+
+
+ul#menu_modulo a {
+	display: block;:
+	width: 100%;
+	padding: 4px;
+	text-decoration: none;
+	padding-left: 10px;
+	color: black;
+}
+
+
+ul#menu_modulo .header_menu {
+	padding: 4px;
+	background-color: #CCC;
+	font-weight: bold;
+}
+
+ul#menu_modulo .submenu a{
+	padding-left: 15px;
+}
+
+ul#menu_modulo a:hover {
+	background-color: #003eff;
+    color: white;    
+}
+
+ul#menu_modulo li:last-child a{
+	padding-left: 4px;
+	font-weight: bold;
+}
+
+
+
+/**
+*
+* CSS PARA FORMULARIOS
+*/
+
+div#div_form{
+	width:480px;
+	margin: 0px auto;
+}
+
+form.formulario fieldset {
+	padding: 5px;
+	border: 1px solid #fc8f30;
+	border-radius: 5px;
+}
+
+form.formulario legend {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+form.formulario	input[type="text"], form.formulario input[type="password"] {
+	width: 250px;
+	height: 25px;
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+
+}
+
+form.formulario	input[readonly="readonly"]  , form.formulario input[readonly] {
+	background-color: #CCC; 		
+}
+
+form.formulario	textarea[readonly="readonly"]  , form.formulario textarea[readonly] {
+	background-color: #CCC; 		
+}
+
+form.formulario select {
+	width: 255px;
+	height: 35px;
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+form.formulario textarea {
+	width: 250px;
+	height: 80px !important;
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+form.formulario	input[type="text"]:focus, form.formulario input[type="password"]:focus, form.formulario textarea:focus, form.formulario select:focus {
+	border-color: #fc8f30; 
+	box-shadow: 0 0 5px #fc8f30; 
+	outline: none;
+}
+
+form.formulario input[type="submit"], form.formulario input[type="button"]{
+	height: 35px;
+	width: 265px;
+	margin-top: 5px;
+	padding: 4px;
+	min-width: 100px;
+	border: 2px solid #cccccc;
+	background-color: #003eff;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+form.formulario input[type="submit"]:hover, form.formulario input[type="button"]:hover{
+	background-color: #022286;
+	color: yellow;
+}
+
+
+form.formulario span.msg{
+	color: red;
+	font-weight: bold;
+}
+
+form.formulario span.msg_sucesso{
+	color: blue;
+	font-weight: bold;
+}
+
+form.formulario #div_image{
+	position: relative;
+	float: left;
+	display: block;
+	height: 100%;
+}
+
+form.formulario #div_fields{
+	position: relative;
+	float: right;
+	display: block;
+	height: 100%;
+}
+
+
+form.formulario .campo_requerido{
+	border: 2px solid red !important;
+}
+
+
+form.formulario div#links{
+	margin-top:10px;
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+
+form.formulario div#links a{
+	color:blue;
+	text-decoration: none;
+}
+
+form.formulario .button_hide{
+   display: none !important;
+}
+
+form.formulario .form_group div{
+	display: inline-block;
+}
+/**
+*
+* FIM DOS CSS PARA FORMULARIO
+*/
+
+
+/**
+*
+* CSS DA TELA DE MENU DOS MÓDULO DO SISTEMA
+*/	
+
+.container_icones{
+	width:100%;
+	margin:30px auto;
+}
+
+.container_icones>ul{
+	display: table;
+	margin: 0 auto;
+}
+
+
+.container_icones ul  {
+	list-style-type:none;
+	padding:0px;
+	margin:0 auto;
+}
+
+.container_icones li {
+	display:inline;
+	float:left;
+	margin:0 auto;
+}
+
+.area_icones {
+	width:170px;
+	height:170px;
+}
+.area_icones span {
+	font-size:14px;
+	display:block;
+	text-align:center;
+	color:#000;
+}
+.icones {
+	width:150px;
+	height:150px;
+	border:1px solid #fc8f30;
+	background-color:#FFF;
+	position: relative;
+	border-radius:10px;
+	cursor:pointer;
+	margin:0 auto;
+}
+
+.icones img {
+	display:block;
+	margin:10px auto 10px auto;
+	cursor:pointer;
+}
+
+
+/*
+* CSS PARA LISTAGEM
+
+*/
+div.div_list{
+	margin: 0px auto;
+}	
+
+div.div_list h2{
+	text-align: center;
+}
+
+
+
+div.div_searchform{
+	margin-bottom: 10px;
+}
+
+
+div.div_searchform_os{
+	margin-bottom: 40px;
+}
+
+div.div_searchform > form fieldset{
+	padding: 5px;
+	border: 1px solid #fc8f30;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}	
+
+div.div_searchform > form legend {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+div.div_searchform	input[type="text"]:focus, div.div_searchform select:focus {
+	border-color: #fc8f30; 
+	box-shadow: 0 0 5px #fc8f30; 
+	outline: none;
+}
+
+div.div_searchform select{
+	height: 30px !important; 
+}
+
+div.div_list > table{
+	width: 100%;
+}	
+
+div.div_list input[type="submit"], div.div_list input[type="button"]{
+	height: 35px;
+	min-width: 120px;
+	margin-top: 5px;
+	padding: 4px;
+	min-width: 100px;
+	border: 2px solid #cccccc;
+	background-color: #003eff;
+	color: #ffffff;
+	cursor: pointer;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;	
+	
+}
+
+div.div_list input[type="submit"]:hover, div.div_list input[type="button"]:hover{
+	background-color: #022286;
+	color: yellow;
+}
+
+
+div.div_form{
+	width: 490px;
+	height: auto;
+	margin: 0px auto;
+	padding: 10px;
+}	
+
+div.div_form > form fieldset{
+	padding: 5px;
+	border: 1px solid #fc8f30;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+div.div_form > form legend {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+div.div_form textarea{
+	height: 80px !important;
+}
+
+div.div_form select{
+	height: 35px !important; 
+}
+
+div.div_form input[type="submit"], div.div_form input[type="button"]{
+	height: 35px;
+	min-width: 120px;
+	margin-top: 5px;
+	padding: 4px;
+	min-width: 100px;
+	border: 2px solid #cccccc;
+	background-color: #003eff;
+	color: #ffffff;
+	cursor: pointer;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;	
+	
+}
+
+div.div_form input[type="submit"]:hover, div.div_form input[type="button"]:hover{
+	background-color: #022286;
+	color: yellow;
+}
+
+div.div_form input[type="text"]:focus, div.div_form input[type="password"]:focus, div.div_form textarea:focus, div.div_form select:focus {
+	border-color: #fc8f30; 
+	box-shadow: 0 0 5px #fc8f30; 
+	outline: none;
+}
+
+
+.tfield {
+	border: 1px solid #a0a0a0;
+	border-radius:5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+	height: 25px;
+	padding: 2px;
+	z_index: 1;
+	cursor: pointer;
+}
+
+.tfield_requery {
+	border: 1px solid red !important;
+}
+
+
+
+.tfield_disabled {
+	background_color: #e0e0e0;
+	color: #a0a0a0;
+}
+
+.sizefiled_80 {
+	width: 80px !important;
+}
+
+.sizefiled_100 {
+	width: 100px !important;
+}
+
+.sizefiled_120 {
+	width: 120px !important;
+}
+
+.sizefiled_150 {
+	width: 150px !important;
+}
+
+.sizefiled_180 {
+	width: 180px !important;
+}
+
+.sizefiled_300 {
+	width: 300px !important;
+}
+
+.sizefiled_320 {
+	width: 320px !important;
+}
+
+.sizefiled_350 {
+	width: 350px !important;
+}
+
+.sizefiled_200 {
+	width: 200px !important;
+}
+
+.sizefiled_220 {
+	width: 220px !important;
+}
+
+
+.labelfield {
+	text-align: right;
+}
+
+.spanFieldRequery{
+	color:red;
+}
+
+.divButtons input {
+	width:120px;
+}
+
+.tquestion {
+	position:absolute;
+	z-index	:1000;
+	left:0;
+	right:0;
+	margin:100px auto;
+	width:300px;
+	height:140px;
+	background: #DDDDDD;
+	border:	1px	solid #000000;
+	border-radius:5px;
+	padding:5px;
+	font-size: 14px;
+}
+
+.tquestion  #div_icon {
+	float: left;
+	width: 48px;
+	height: 48px;
+}
+
+.tquestion #div_msg {
+	float: left;
+	margin-top:30px;
+	width: 240px;
+	height: 30px;
+	
+}
+
+.tquestion  #div_btn {
+	clear:left;
+	margin-top: 110px;
+	width: 295px;
+	height: 30px;
+}
+
+.tquestion #div_btn input[type='button'] {
+	float: right;
+	width: 50px;
+	margin-left: 5px;
+	border: 1px solid black;
+	font-weight: bold;
+}
+
+.tmessage {
+	position:absolute;
+	z-index	:1000;
+	left:0;
+	right:0;
+	margin:100px auto;
+	width:300px;
+	min-height:140px;
+	background: #DDDDDD;
+	border:	1px	solid #000000;
+	border-radius:5px;
+	padding:5px;
+	font-size: 14px;
+}
+
+.tmessage  #div_icon {
+	float: left;
+	width: 48px;
+	height: 48px;
+}
+
+.tmessage  #div_msg {
+	float: left;
+	padding-top:10px;
+	width:240px;
+	min-height:100px;	
+}
+
+.tmessage  #div_btn {
+	clear:left;
+	margin-top:10px;
+	width:295px;
+	height:30px;
+}
+
+.tmessage #div_btn input[type='button'] {
+	float: right;
+	width: 50px;
+	border: 1px solid black;
+	font-weight: bold;
+}
+
+.tmessage  ul {
+	list-style:none;
+	list-style-position: outside;
+}
+
+/*
+CSS DA TDataGrid
+*/
+.tdatagrid_table{
+		border-collapse: separate;
+		font-size: 10pt;
+		border-spacing: 0pt;
+		border: solid 1px black;
+		width: 100%
+}		
+.tdatagrid_col{
+		font-size       : 10pt;
+		font-weight     : bold;
+		border-left     : 1px solid white;
+		border-top      : 1px solid white;
+		border-right    : 1px solid gray;
+		border-bottom   : 1px solid gray;
+		padding-top     : 1px;
+		background-color : #CCCCCC;
+}		
+
+.tdatagrid_col_over{
+		font-size       : 10pt;
+		font-weight     : bold;
+		border-left     : 1px solid white;
+		border-top      : 2px solid orange;
+		border-right    : 1px solid gray;
+		border-bottom   : 1px solid gray;
+		padding-top     : 0px;
+		cursor          : pointer;
+		background-color:  #dcdcdc;
+}		
+		
+.tdatagrid_col_action_extra{
+		display: block;
+		width : 185px;
+		height: 100%;
+}
+
+.width_auto{
+	width: auto;
+}
+
+a.action_extra {
+	display: inline-block;
+	min-width: 50px;
+	width: 70px;
+	padding: 0 10px 0 10px;
+	color: #003eff;
+    text-decoration: none;
+    text-align: center;
+    white-space:nowrap;
+    font-weight: bold;    
+	line-height: 35px;
+	vertical-align: middle;
+}
+
+a.action_extra:hover {
+	background-color: #003eff;
+    color: white;    
+}

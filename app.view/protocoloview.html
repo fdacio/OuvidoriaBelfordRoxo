@@ -1,0 +1,63 @@
+<div id="container">
+<div id="div_form">
+	<form action="?class=ViewProtocoloForm&method=View" method="post" class="formulario">
+		<fieldset>
+			<legend>Visualizar Protocolo</legend> 
+			
+			<div id="div_image">
+				<img src="app.images/approve_notes.png" alt="Finalizar Protocolo" title="Finalizar Protocolo" />
+			</div>
+				<div id="div_fields" >
+				<input type="hidden" name="pro_id" value="#PRO_ID">
+				<label for="protocolo_numero">Nº do Protocolo</label> <br />
+				<input type="text" name="protocolo_numero" id="protocolo_numero" readonly="readonly" value="#PRO_NUMERO_ANO" class="sizefiled_120" /> <br />
+				
+				<label for="protocolo_nome">Nome</label> <br />
+				<input type="text" name="protocolo_nome" id="protocolo_nome"  readonly="readonly" value="#PRO_NOME" class="#protocolo_nome_requerido sizefiled_300" /> <br />
+				
+				<label for="protocolo_nascimento">Nascimento</label> <br />
+				<input type="text" name="protocolo_nascimento" id="protocolo_nascimento"  readonly="readonly" value="#PRO_NASCIMENTO" class="sizefiled_120 mask_99/99/9999_mask"/> <br />
+				
+				<label for="protocolo_endereco">Endereço</label> <br />
+				<input type="text" name="protocolo_endereco" id="protocolo_endereco"  readonly="readonly" value="#PRO_ENDERECO" class="sizefiled_300"/> <br />				
+				
+				<label for="protocolo_bairro">Bairro</label> <br />
+				<input type="text" name="protocolo_bairro" id="protocolo_bairro"  readonly="readonly" value="#PRO_BAIRRO" class="sizefiled_300"/> <br />				
+
+				<label for="protocolo_municipio">Município</label> <br />
+				<input type="text" name="protocolo_municipio" id="protocolo_municipio"  readonly="readonly" value="#PRO_MUNICIPIO" class="sizefiled_300"/> <br />				
+
+				<label for="protocolo_uf">UF</label> <br />
+				<input type="text" name="protocolo_uf" id="protocolo_uf" class="sizefiled_100" readonly="readonly" value="#PRO_UF" /> <br />				
+				
+				<label for="protocolo_cep">CEP</label> <br />
+				<input type="text" name="protocolo_cep" id="protocolo_cep" readonly="readonly" value="#PRO_CEP" class="sizefiled_120 mask_99.999-999_mask" /> <br />				
+
+				<label for="protocolo_celular">Celular</label> <br />
+				<input type="text" name="protocolo_celular" id="protocolo_celular" readonly="readonly" value="#PRO_CELULAR" class="sizefiled_120 mask_(99)9-9999-9999_mask" />  <br />				
+
+				<label for="protocolo_telefone">Telefone</label> <br />
+				<input type="text" name="protocolo_telefone" id="protocolo_telefone" readonly="readonly" value="#PRO_TELEFONE" class="sizefiled_120 mask_(99)9999-9999_mask" /> <br />				
+
+				<label for="protocolo_email">Email</label> <br />
+				<input type="text" name="protocolo_email" id="protocolo_email" readonly="readonly" value="#PRO_EMAIL" class="sizefiled_300" /> <br />				
+
+				<label for="protocolo_redesocial">Rede Social</label> <br />
+				<input type="text" name="protocolo_redesocial" id="protocolo_redesocial" readonly="readonly" value="#PRO_REDESOCIAL" class="sizefiled_300" /> <br />				
+
+				<label for="protocolo_pedido">Pedido/Reclamação/Sugestão </label> <br />
+				<textarea name="protocolo_pedido" id="protocolo_pedido" readonly="readonly" class="#protocolo_pedido_requerido sizefiled_300">#PRO_PEDIDO_RECLAMACAO_SUGESTAO</textarea><br />
+	
+				<label for="protocolo_observacao">Observação </label> <br />
+				<textarea name="protocolo_observacao" id="protocolo_observacao" readonly="readonly" class="sizefiled_300">#PRO_OBSERVACAO</textarea><br />
+
+				<label for="protocolo_resultado">Resultado </label> <br />
+				<textarea name="protocolo_resultado" id="protocolo_resultado" readonly="readonly" class="sizefiled_300">#PRO_RESULTADO</textarea><br />
+
+				<input name="btnOK" type="submit" value="OK" class="sizefiled_320"/> 
+				
+			</div>
+		</fieldset>
+	</form>
+</div>
+</div>

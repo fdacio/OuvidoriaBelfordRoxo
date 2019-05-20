@@ -1,0 +1,30 @@
+<div id="div_form">
+	<form action="?class=Login&method=doLogin" method="post" class="formulario">
+		<fieldset>
+			<legend> Login do Sistema </legend> 
+			
+			<span class="msg">#MSG</span> 
+			<span class="msg_sucesso">#MENSAGEM_SECESSO</span> <br />
+			
+			
+			
+			<div id="div_image">
+				<img src="app.images/lock.png" alt="login" title="Login" />
+			</div>
+			
+			<div id="div_fields">	
+				<label for="email">e-Mail </label> <br />
+				<input type="text" name="email" id="email" class="#email_requerido" value="#EMAIL" /> <br />
+				<label for="senha">Senha</label> <br />
+				<input type="password" name="senha" id="senha" class="#senha_requerido" />
+				<div id="capsWarning"><img src="app.images/capslock.png" alt="capslock"/></div><br />
+				<input name="btnLogin" type="submit" value="Entrar" /> <br />
+			</div>
+			
+			<div id="links">
+				<a href="?class=Cadastrese">Cadastre-se</a><br />
+				<a href="?class=EsqueciSenha">Esqueci minha senha</a>
+			</div>
+		</fieldset>
+	</form>
+</div>

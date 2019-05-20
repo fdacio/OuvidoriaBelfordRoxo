@@ -1,0 +1,36 @@
+<div id="container">
+<div id="div_form">
+	<form action="?class=UsuarioFilterReportForm&method=onGerarPdf" method="post" class="formulario">
+		<fieldset>
+			<legend>Filtro do Relatório - Usuário</legend> 
+			
+			<span class="msg">#MSG</span> <br />
+			
+			<div id="div_image">
+				<img src="app.images/filter.png" alt="Filtro do Relatório" title="Filtro do Relatório" />
+			</div>
+				<div id="div_fields" >
+				<label for="order_by">Por ordem de </label> <br /><br />
+				<input name="order_by" value="USU_ID" type="radio"  title="#CHECKED_CODIGO" />
+					<label>Código</label>
+				<input name="order_by" value="USU_NOME" type="radio" title="#CHECKED_NOME" />
+					<label>Nome</label><br /><br />
+	
+				<label for="nivel">Nível</label> <br />
+				<select name="nivel" id="nivel" >
+					<option value="-1">[Todos]</option>
+					<option>#OPTIONS_NIVEL</option>
+				</select> <br /> <br />
+
+				<label for="situacao">Situação</label> <br />
+				<select name="situacao" id="situacao" >
+					<option value="-1">[Todos]</option>
+					<option>#OPTIONS_SITUACAO</option>
+				</select> <br /> <br />
+				
+				<input name="btnGerarPdf" type="submit" value="Gerar PDF" /> <br />
+			</div>
+		</fieldset>
+	</form>
+</div>
+</div>
