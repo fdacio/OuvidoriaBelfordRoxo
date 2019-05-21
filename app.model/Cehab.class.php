@@ -24,4 +24,20 @@ class Cehab extends TRecord {
         return $this->arraySituacao[$this->SITUACAO];
     }
     
+    public function get_ENDERECO_COMPLETO()
+    {
+        return $this->ENDERECO . ', ' . $this->NUMERO . ' ' . $this->COMPLEMENTO . 
+            ' - ' . $this->BAIRRO; 
+    }
+    
+    public function get_CEHAB_ESCRITURA()
+    {
+        return ($this->TEM_ESCRITURA == 1)?'Sim':'Não';
+    }
+    
+    public function get_CEHAB_PROPRIETARIO()
+    {
+        return ($this->PROPRIETARIO == 1)?'Sim':'Não';
+    }
+    
 }
