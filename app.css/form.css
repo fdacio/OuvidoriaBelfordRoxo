@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+/**
+CSS PARA FORMULARIO ACESSO
+*/
+.form_ {
+	margin: 0 auto;
+}
+
+.form_cadastro_ {
+	width:580px;
+}
+
+.form_consulta_ {
+	width:100%;
+}
+.msg_ {
+	padding: 5px;
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+
+.msg_error_ {
+	background-color: #990000;
+}
+
+.msg_sucess_ {
+	background-color: #000099;
+}
+
+.msg_visivel_ {
+	visibility: visible;
+	display: block;
+}
+
+.msg_invisivel_ {
+	visibility: hidden;
+	display: none;
+}
+
+.campo_requerido_ {
+	border: 2px solid red !important;	
+}
+
+.fieldset_ {
+	padding: 10px;
+    box-sizing: border-box;
+	border: 1px solid #fc8f30;
+	border-radius: 5px;
+}
+
+.legend_ {
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px;
+}
+
+#header_form_ {
+	height: 54px;
+	background-color: #fc8f30;
+	margin-bottom: 15px;
+}
+
+#link_goback_ {
+	padding: 2px;
+	float: left;
+	height: 54px;
+	width: 54px;
+}
+
+.link_goback_ {
+ 	float: left;
+}	
+
+#header_form_ h2 {
+	position:relative;	
+	width: 280px;
+	display: block;
+	margin: 0 auto;
+	top: 15px;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+#image_form_ {
+	position:relative;
+	top: -17px;
+	float: right;
+	height: 90px;
+	width: 90px;
+}
+
+.input_ {
+	width: 100%;
+	height: 30px;
+	border: 1px solid #fc8f30;
+	padding: 4px;
+	font-size: 1.2em;
+}
+
+.input_textarea_ {
+	height: 100px;
+}
+
+.input_button_ {
+	background-color: #fc8f30;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 1.2em;
+	height: 40px;
+}
+
+.input_button_:hover {
+	background-color: #fc8f00;
+	color: white;
+}
+
+.size_field_80 {
+	width: 80px;
+}
+
+.size_field_120 {
+	width: 120px;
+}
+
+.size_field_130 {
+	width: 130px;
+}
+
+.size_field_150 {
+	width: 150px;
+}
+
+.size_field_267 {
+	width: 267px;
+}
+
+.size_field_275 {
+	width: 275px;
+}
+
+.size_field_320 {
+	width: 320px;
+}
+
+.size_field_380 {
+	width: 380px;
+}
+
+.size_field_465 {
+	width: 465px;
+}
+
+.size_field_550 {
+	width: 550px;
+}
+.size_field_560 {
+	width: 560px;
+}
+
+.select_ {
+	height: 40px;
+}
+.div_fields_ label {
+	display: block;
+	margin-top: 4px;
+}
+
+.div_fields_group_ div {
+	display: inline-block;
+}
+
+.hide_passsword {
+	display: none;
+}
+/**
+  FIM FORMULARIO;
+*/
+
+.load_ajax {
+	background:url(../app.images/ajax.gif) no-repeat left top;
+}
+

@@ -9,6 +9,7 @@ function __autoload($classe)
 					'app.control',	
 					'app.control/usuario', 
 					'app.control/protocolo',
+	                'app.control/cehab',
 					'app.webservice');
 
 	foreach ($pastas as $pasta)	

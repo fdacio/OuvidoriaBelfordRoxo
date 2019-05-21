@@ -353,7 +353,8 @@ class TFuncoes{
 	{
 		$pastas = array(
 					'app.control/usuario',
-					'app.control/protocolo',					
+					'app.control/protocolo',
+		            'app.control/cehab',
 					'app.control',
 	   				'app.widgets',
 	   				'app.ado', 

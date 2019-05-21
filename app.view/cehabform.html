@@ -1,0 +1,102 @@
+<form action="?class=CehabForm&method=onSave" method="post" class="form_ form_cadastro_">
+	<fieldset class="fieldset_">
+		<div id="header_form_">
+			<h2>CEHAB</h2>
+		</div>
+		<div class="msg #msg_visivel_">#MSG</div>
+		<div class="div_fields_">
+			<label for="f_cpf">CPF</label>
+			<input type="hidden" name="ID" value="#ID">
+			<input type="text" name="CPF" id="f_cpf" class="#cpf_requerido input_ size_field_150 mask_999.999.999-99_mask" value="#CPF" />
+		</div>
+		<div class="div_fields_">
+			<label for="f_nome">Nome</label>
+			<input type="text" name="NOME" id="f_nome" class="#nome_requerido input_ size_field_550" value="#NOME" /> 
+		</div>
+		<div class="div_fields_group_">
+			<div class="div_fields_">
+				<label for="f_cep">CEP</label>
+				<input type="text" name="CEP" id="f_cep" class="input_ size_field_120 mask_99.999-999_mask" value="#CEP" />
+			</div> 
+			<div class="div_fields_">
+				<label for="f_logradouro">Endereço(Rua/Av./Tv.)</label>
+				<input type="text" name="ENDERECO" id="f_logradouro" class="#endereco_requerido input_ size_field_320" value="#ENDERECO" /> 
+			</div>
+			<div class="div_fields_">
+				<label for="f_numero">Número</label>
+				<input type="text" name="NUMERO" id="f_numero" class="#numero_requerido input_ size_field_80" value="#NUMERO" />
+			</div> 
+		</div>
+		<div class="div_fields_group_">
+			<div class="div_fields_">
+				<label for="f_complemento">Complemento</label>
+				<input type="text" name="COMPLEMENTO" id="f_complemento" class="input_ size_field_267" value="#COMPLEMENTO" />
+			</div>
+			<div class="div_fields_">
+				<label for="f_bairro">Bairro</label>
+				<input type="text" name="BAIRRO" id="f_bairro" class="#bairro_requerido input_ size_field_267" value="#BAIRRO" />
+			</div> 
+		</div>
+		<div class="div_fields_group_">
+			<div class="div_fields_">
+				<label for="f_cidade">Cidade</label>
+				<input type="text" name="CIDADE" id="f_cidade" class="#cidade_requerido input_ size_field_465" value="#CIDADE" />
+			</div> 
+			<div class="div_fields_">
+				<label for="f_uf">UF</label>
+				<select name="PFS_UF" id="f_uf" class="#uf_requerido input_ select_ size_field_80" >
+					<option value=""   data-uf-X>UF</option>
+					<option value="RJ" data-uf-RJ>RJ</option>
+				</select>
+			</div>
+		</div>
+		<div class="div_fields_group_">
+			<div class="div_fields_">
+				<label for="f_telefone">Telefone</label>
+				<input type="text" name="TELEFONE" id="f_telefone" class="input_ size_field_267 mask_(99)9999-9999_mask" value="#TELEFONE" />
+			</div> 
+			<div class="div_fields_">
+				<label for="f_celular">Celular</label>
+				<input type="text" name="CELULAR" id="f_celular" class="#celular_requerido input_ size_field_267 mask_(99)9 9999-9999_mask" value="#CELULAR" />
+			</div> 
+		</div>
+		<div class="div_fields_">
+			<label for="f_email">e-Mail</label>
+			<input type="email" name="EMAIL" id="f_email" class="input_ size_field_550" value="#EMAIL" />
+		</div>
+		<div class="div_fields_group_">
+			<div class="div_fields_">
+				<label for="f_proprietario">É o Proprietário?</label>
+				<select name="PROPRIETARIO" id="f_proprietario" class="##e_proprietario_requerido input_ select_ size_field_275" >
+					<option value="0" data-proprietario-x></option>
+					<option value="1" data-proprietario-1>SIM</option>
+					<option value="2" data-proprietario-2>NÃO</option>
+				</select>
+			</div>
+			<div class="div_fields_">
+				<label for="f_conhece_proprietario">Conhece o Proprietário?</label>
+				<select name="CONHECE_PROPRIETARIO" id="f_conhece_proprietario" class="#conhece_proprietario_requerido input_ select_ size_field_275" >
+					<option value="0" data-conhece-proprietario-x></option>
+					<option value="1" data-conhece-proprietario-1>SIM</option>
+					<option value="2" data-conhece-proprietario-2>NÃO</option>
+				</select>
+			</div>
+		</div>
+		<div class="div_fields_">
+			<label for="f_nome_proprietario">Nome do Proprietário</label>
+			<input type="text" name="#NOME_PROPRIETARIO" id="f_nome_proprietario" class="input_ size_field_550" value="#NOMEPROPRIETARIO" />
+		</div>
+
+		<div class="div_fields_">
+			<label for="f_tem_escritura">Tem Escritura?</label>
+			<select name="TEM_ESCRITURA" id="f_tem_escritura" class="#tem_escritura_requerido input_ select_ size_field_560" >
+				<option value="0" data-tem-escritura-x></option>
+				<option value="1" data-tem-escritura-1>SIM</option>
+				<option value="2" data-tem-escritura-2>NÃO</option>
+			</select>
+		</div>
+		
+		<br />
+		<input name="btnSalvar" type="submit" class="input_ input_button_" value="Salvar" />
+	</fieldset>
+</form>
